@@ -61,6 +61,6 @@ ImageDetector.Detect('gif.gif', function(o) {
 });
 
 // Just adding a new test where the file is not there 
-ImageDetector.Detect('abc', function(o){
+ImageDetector.Detect('abc2', function(o){
     console.log(o);
 });
