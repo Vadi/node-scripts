@@ -60,3 +60,5 @@ ImageDetector.Detect('server.js', function(o) {
 ImageDetector.Detect('gif.gif', function(o) {
     console.log(o);
 });
+
+ImageDetector.Detect('abc3')
