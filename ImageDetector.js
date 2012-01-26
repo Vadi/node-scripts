@@ -44,7 +44,6 @@ var ImageDetector = {
 };
 
 /* Some simple tests to see ImageDetector works just fine */
-
 ImageDetector.Detect('jpeg.jpg', function(i) {
     console.log(i);
 });
@@ -61,4 +60,11 @@ ImageDetector.Detect('gif.gif', function(o) {
     console.log(o);
 });
 
+<<<<<<< HEAD
 ImageDetector.Detect('abc3')
+=======
+// Just adding a new test where the file is not there 
+ImageDetector.Detect('abc2', function(o){
+    console.log(o);
+});
+>>>>>>> dev
