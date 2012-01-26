@@ -44,7 +44,6 @@ var ImageDetector = {
 };
 
 /* Some simple tests to see ImageDetector works just fine */
-
 ImageDetector.Detect('jpeg.jpg', function(i) {
     console.log(i);
 });
@@ -58,5 +57,10 @@ ImageDetector.Detect('server.js', function(o) {
 });
 
 ImageDetector.Detect('gif.gif', function(o) {
+    console.log(o);
+});
+
+// Just adding a new test where the file is not there 
+ImageDetector.Detect('abc', function(o){
     console.log(o);
 });
