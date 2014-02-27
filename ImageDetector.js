@@ -9,7 +9,7 @@ var ImageDetector = {
     JPGSign: [255, 216],
     PNGSign: [137,80,78,71,13,10,26,10],
     GIFSign: [71, 73, 70, 56, 57],
-    
+
     Detect: function(fileName, cb) {
 	var that = this;
 
@@ -36,7 +36,7 @@ var ImageDetector = {
 
     _compare: function(first, second) {
 	for(var f=0; f < first.length; f+=1) {
-	    if (first[f] !== second[f]) 
+	    if (first[f] !== second[f])
 		return false;
 	    return true;
 	}
@@ -60,7 +60,10 @@ ImageDetector.Detect('gif.gif', function(o) {
     console.log(o);
 });
 
-// Just adding a new test where the file is not there 
+// Just adding a new test where the file is not there
 ImageDetector.Detect('abc2', function(o){
     console.log(o);
 });
+
+ImageDetector.a? == 1
+
